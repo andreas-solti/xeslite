@@ -9,7 +9,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.andreas-solti.xeslite</groupId>
 	<artifactId>xeslite</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>XESLite</name>
 
 	<url>https://github.com/andreas-solti/xeslite</url>
@@ -96,7 +96,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<!-- For the benefit of java-matrix-benchmark -->
 				<!-- mvn compile assembly:single -->
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.5.3</version>
