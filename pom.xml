@@ -1,11 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.xeslite</groupId>
+	<groupId>io.github.andreas-solti.matrix-toolkits-java</groupId>
 	<artifactId>xeslite</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>XESLite</name>
-	<url>https://github.com/fmannhardt/xeslite</url>
+
+	<url>https://github.com/andreas-solti/xeslite</url>
 	<description>An alternative implementations of the XES standard for event logs.</description>
 	<licenses>
 		<license>
@@ -14,11 +22,24 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/fmannhardt/xeslite</url>
+		<url>https://github.com/andreas-solti/xeslite</url>
+		<connection>scm:git:git@github.com:andreas-solti/xeslite.git</connection>
+		<developerConnection>scm:git:ssh://github-andreas-solti/andreas-solti/xeslite.git</developerConnection>
 	</scm>
 	<issueManagement>
-		<url>https://github.com/fmannhardt/xeslite/issues</url>
+		<url>https://github.com/andreas-solti/xeslite/issues</url>
 	</issueManagement>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
 	<inceptionYear>2016</inceptionYear>
 	<properties>
 		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
@@ -40,7 +61,32 @@
 			<id>openxes-repo</id>
 			<url>file:///${project.basedir}/openxes</url>
 		</repository>
+
+		<repository>
+			<id>sonatype-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>sonatype-releases</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+
 	</repositories>
+
+
 	<dependencies>
 		<!-- Not available on Maven, local copy -->
 		<dependency>
