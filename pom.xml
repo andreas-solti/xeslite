@@ -24,7 +24,7 @@
 	<scm>
 		<url>https://github.com/andreas-solti/xeslite</url>
 		<connection>scm:git:git@github.com:andreas-solti/xeslite.git</connection>
-		<developerConnection>scm:git:ssh://github-andreas-solti/andreas-solti/xeslite.git</developerConnection>
+		<developerConnection>scm:git:ssh://github.com/andreas-solti/xeslite.git</developerConnection>
 	</scm>
 	<issueManagement>
 		<url>https://github.com/andreas-solti/xeslite/issues</url>
