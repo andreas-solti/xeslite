@@ -7,9 +7,9 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>io.github.andreas-solti.matrix-toolkits-java</groupId>
+	<groupId>io.github.andreas-solti.xeslite</groupId>
 	<artifactId>xeslite</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>XESLite</name>
 
 	<url>https://github.com/andreas-solti/xeslite</url>
